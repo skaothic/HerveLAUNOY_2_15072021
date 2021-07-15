@@ -4,16 +4,25 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
+        <link rel="icon" sizes="144x144" href="images\logo/fav-icon.png">
         <script src="https://kit.fontawesome.com/ee78f38734.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
      </head>
-<link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet">
 <header>
     <div id=titre>
             <p><img src=images/logo/Reservia@3x.png id=logo></p>
             <nav>
-                <a href=# class=navOption>Hébergements</a>
-                <a href=# class=navOption>Activités</a>
-                <a href=# class=navOption>S'incrire<a>
+                <a href=#content class=navOption>Hébergements</a>
+                <a href=#more class=navOption>Activités</a>
+                <a href=# id=login class=navOption>S'incrire<a>
             </nav>
     </div>
-</header>
+<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+<p>En plein centre ville ou en pleine nature</p>
+<form method=get action="traitement.php">
+    <button class="btn" id=locate><i class="fas fa-map-marker-alt"></i></button>
+    <input type=text placeholder="Marseille, France"/>
+    <input type=submit value=Rechercher class=submit>
+</form>
