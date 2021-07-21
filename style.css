@@ -1,0 +1,171 @@
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+#content,footer,aside{
+background-color : #F2F2F2 ;
+}
+nav {
+    display:flex;   
+    position:absolute;
+    padding: 20px 20px;
+    top: 0;
+    right: 0;
+    color:#0065FC ;
+}
+#login{
+    font-weight: bolder;
+}
+li,nav{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+a :active{
+    text-decoration-line:overline;
+}
+.choix {
+    border : 2px solid #F2F2F2 ;
+    border-radius: 80px;
+    margin:20px;
+    font-weight: 800;
+    padding-right:45px;
+    color:black
+}
+#logo{
+    width: 140px;
+    object-fit: contain;
+}
+.navOption{
+    padding:0px 15px;
+}
+#filter{
+    display:flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.choix:hover{
+    background-color: #DEEBFF;
+    color:white;
+}
+.submit{
+    background-color: #0065FC;
+    color:white ;
+    border-radius: 0 20px 20px 0;}
+form{
+    display: flex;
+    justify-content: flex-start;
+    width: 420px;
+    border-radius: 20px;
+    height: 50px;
+}
+button , input {
+    border: 1px solid #F2F2F2;
+    background: none ;
+}
+#locate { 
+    background-color:#F2F2F2 ;
+    color:black;
+    border-radius: 20px 0px 0px 20px ;
+    font-size: large;
+}
+.submit{
+    border: solid #0065FC;
+    width: 134px;
+}
+.mainPic{
+    height: 115px;
+    width: 235px;
+    border-radius: 25px 25px 0 0 ;
+    object-fit:cover;
+
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+.result{
+    display: flex;
+    justify-content: space-evenly;
+}
+#content,aside{
+    border-radius: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height:220px;
+}
+.each{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid white 5px;
+}
+.rating{
+    display: flex;
+}
+.fa-star{
+    color:blue;
+}
+.grey{
+    color:#F2F2F2
+}
+button{
+    width: 52px;
+}
+.asidePic{
+    height: 114px;
+    width: 134px;
+    border-radius:  25px 0 0 25px ;
+    object-fit: cover;
+}
+.eachAside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid white 5px;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logochoix{
+    background-color: #DEEBFF;
+    padding: 25px;
+    border-radius: 80px;
+    color:#0065FC;
+}
+#content{
+    width: 60%;
+}
+aside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+    ;
+}
+#asideTitle{
+    display: flex;
+    justify-content: space-between;
+    padding-right:45px;
+}
+.info{
+    color:black;
+    font-weight: bold;
+    font-size: larger;
+}
+.hotel{
+    font-weight: 900;
+    font-size:1.2em;
+}
