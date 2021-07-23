@@ -1,6 +1,7 @@
 html{
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
+    margin: 0px 50px;
 }
 #content,footer,aside{
 background-color : #F2F2F2 ;
@@ -22,6 +23,7 @@ li,nav{
 }
 a{
     text-decoration: none;
+    color:black;
 }
 .choix {
     display: flex;
@@ -33,9 +35,7 @@ a{
     margin:20px;
     font-weight: 800;
     padding-right:45px;
-    color:black
-    
-    
+    color:black   
 }
 #logo{
     width: 140px;
@@ -86,15 +86,16 @@ button , input {
 }
 .mainPic{
     height: 115px;
-    width: 235px;
+    width: 236px;
     border-radius: 25px 25px 0 0 ;
     object-fit:cover;
     border: 3px solid white;
 
 }
-section{
+#main{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .result{
     display: flex;
@@ -140,7 +141,7 @@ button{
 .eachAside{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     margin: 20px;
     background-color: white;
     border-radius: 30px;
@@ -158,14 +159,13 @@ span{
     color:#0065FC;
 }
 #content{
-    width: 60%;
+    width: 65%;
 }
 aside{
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around
-    ;
+    justify-content: space-around;
 }
 #asideTitle{
     display: flex;
@@ -177,9 +177,11 @@ aside{
     font-weight: bold;
     font-size: larger;
 }
-.hotel{
+h4+.moreTitle{
     font-weight: 900;
     font-size:1.2em;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
 }
 .fa-info{
     border:solid #F2F2F2 1px;
@@ -195,18 +197,47 @@ aside{
 #more{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    height: 446px;
+    justify-content: space-between;
 }
-.moreSmall{
+.moreSmall+.moreBig{
     display:flex;
     flex-direction: column;
+    margin-top:0px;
 }
-.moreBig{
-    height: 446px;
+.hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+#port,#calanques{
+    height: 302px;
+    width: 389px;
+}
+img{
+    object-fit:cover;
+}
+.moreBigPic{
+    height: 390px;
+    width:302px;
+}
+#fort{
+    height: 182px;
     width: 302px;
 }
-figure{
+#frioul{
+    height: 109px;
     width: 302px;
-    object-fit: cover;
+}
+#dame{
+    height: 140px;
+    width: 302px;
+}
+#longchamps{
+    height: 153px;
+    width: 302px;
+}
+footer{
+    margin:0 -50px;
 }
