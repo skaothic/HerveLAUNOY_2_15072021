@@ -167,7 +167,7 @@ button{
     margin: 20px;
     background-color: white;
     border-radius: 30px;
-    width: 80%;
+    width: 400px;
     align-items: center;
     box-shadow:10px 10px 10px #a8a0a0;
 }
@@ -183,13 +183,15 @@ span{
     color:#0065FC;
 }
 #content{
-    width: 65%;
+    width: 1040px;
+    margin-bottom: 50px;
 }
 aside{
-    width: 32%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 #asideTitle{
     display: flex;
