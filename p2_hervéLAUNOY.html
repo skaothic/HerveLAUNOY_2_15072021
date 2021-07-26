@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=fr>
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-     </head>
+    </head>
 <header>
     <div id=titre>
             <p><img src=images/logo/Reservia@3x.png id=logo></p>
@@ -27,17 +27,17 @@
     <input type=submit value=Rechercher class=submit>
 </form>
 <ul id=filter>Filtres
-    <a class="choix" href=#><i class="fas fa-money-bill-wave logochoix"></i>Economique</a>
-    <a class="choix" href=#><i class="fas fa-child logochoix"></i>Familial</a>
-    <a class="choix" href=#><i class="fas fa-heart logochoix"></i>Romantiques</a>
-    <a class="choix" href=#><i class="fas fa-dog logochoix"></i>Animaux autorisés</a>
+    <li><a class="choix" href=#><i class="fas fa-money-bill-wave logochoix"></i><span class=filterChoice>Economique</span></a></li>
+    <li><a class="choix" href=#><i class="fas fa-child logochoix"></i><span class=filterChoice>Familial</span></a></li>
+    <li><a class="choix" href=#><i class="fas fa-heart logochoix"></i><span class=filterChoice>Romantiques</span></a></li>
+    <li><a class="choix" href=#><i class="fas fa-dog logochoix"></i><span class=filterChoice>Animaux autorisés</span></a></li>
 </ul>
 <p class=info> <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville </p>
 </header>
 <body>
         <div id=main>
     <section id=content>
-        <h2>Hébergements à Marseille</h2>
+        <h2 class=tittleToPad>Hébergements à Marseille</h2>
           <div class=result>
               <div class=each><a href=# > <img src=images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg class=mainPic> 
             <span class=hotel><h4>Auberge la Cannebière</h4>
@@ -102,10 +102,10 @@
             </a>
         </div>
         </div>
- <h3>Afficher plus</h3>
+ <h3 class=tittleToPad>Afficher plus</h3>
     </section>
 <aside>
-    <h2 id=asideTitle>Les plus populaires <i class="fas fa-chart-line"></i></h2>
+    <h2 id=asideTitle class=tittleToPad>Les plus populaires <i class="fas fa-chart-line"></i></h2>
         <div><a href=# class=eachAside ><img src=images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg class=asidePic> 
             <span class=hotel><h4>Hôtel Le soleil du matin</h4>
             Nuits à partir de128€
@@ -141,14 +141,16 @@
 </div>
 <h3>Activités à Marseille</h3>
     <div id=more>
-            <p class="moreBig moreEach"><img src=images\activites\4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg class=moreBigPic><span class=moreTitle>Vieux Port</span></p>
-        <div class =moreSmall>
-            <p class=moreEach><img src=images\activites\4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg class=moreSmallPic id=fort><span class=moreTitle>Fort de Pomègue</span></p>
-            <p class=moreEach><img src=images\activites\4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg class=moreSmallPic id=frioul><span class=moreTitle>Îles du Frioul</span></p>    
+        <a href=# class=moreEachLink><p class="moreBig moreEach"><img src=images\activites\4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg class=moreBigPic><span class=moreTitle>Vieux Port</span></p></a>
+        <div class ="moreSmall">
+            <a href=# class=moreEachLink><p class="moreEach"><img src=images\activites\4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg class=moreSmallPic id=fort><span class=moreTitle>Fort de Pomègue</span></p></a>
+            <a href=# class="moreEachLink frioul"><p class="moreEach"><img src=images\activites\4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg class=moreSmallPic id=frioul><span class=moreTitle>Îles du Frioul</span></p></a> 
         </div>
-    <p class="moreBig moreEach"><img src=images\activites\4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg class=moreBigPic><span class=moreTitle>National des Calanques</span></p>
-    <div class =moreSmall><p class=moreEach><img src=images\activites\4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg class=moreSmallPic id=dame><span class=moreTitle>Notre-Dame-de-la-Garde</span></p>
-    <p class=moreEach><img src=images\activites\4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg class=moreSmallPic id=longchamps><span class=moreTitle>Longchamp</span></p></div>
+        <a href=# class=moreEachLink><p class="moreBig moreEach"><img src=images\activites\4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg class=moreBigPic><span class=moreTitle>National des Calanques</span></p></a>
+        <div class ="moreSmall">
+            <a href=# class=moreEachLink><p class="moreEach"><img src=images\activites\4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg class=moreSmallPic id=dame><span class=moreTitle>Notre-Dame-de-la-Garde</span></p></a>
+            <a href=# class="moreEachLink longchamps"><p class="moreEach"><img src=images\activites\4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg class=moreSmallPic id=longchamps><span class=moreTitle>Longchamp</span></p></a>
+        </div>
 </div>
 </body>
     <footer id=footer>

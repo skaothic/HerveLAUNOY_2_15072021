@@ -38,7 +38,7 @@ a{
     color:black;   
 }
 .filterChoice{
-    margin-left:10px;
+    margin-left:20px;
     font-weight: 900;
 }
 #titre{
@@ -137,6 +137,7 @@ footer{
     background-color: white;
     border-radius: 30px;
     color:black;
+    box-shadow:10px 10px 10px #a8a0a0;
 }
 .rating{
     display: flex;
@@ -168,6 +169,7 @@ button{
     border-radius: 30px;
     width: 80%;
     align-items: center;
+    box-shadow:10px 10px 10px #a8a0a0;
 }
 span{
     display: flex;
@@ -226,8 +228,8 @@ h4{
 .moreSmall{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: -10PX;
+    justify-content: flex-start;
+    align-self: flex-end;
 }
 .hotel{
     display: flex;
@@ -235,9 +237,6 @@ h4{
     justify-content: center;
     align-items: flex-start;
     margin-left:10px;
-}
-.Main{
-    margin-left:-20px;
 }
 img{
     object-fit:cover;
@@ -272,9 +271,10 @@ footer{
     margin-top:45px;
 }
 .moreEach{
-    border:solid #F2F2F2 1px;
+    border:solid transparent 1px;
     border-radius: 30px;
     margin:10px;
+    box-shadow:10px 10px 10px #a8a0a0;
 }
 .moreTitle{
     margin: 15px;
@@ -293,10 +293,6 @@ h1{
     margin-right:-15px;
     font-weight: 500;
 }
-.moreEach, .moreEachLink, .eachAside, .each{
-    cursor: zoom-in;
-}
-.cards{
-    box-shadow:10px 10px 10px #a8a0a0;
-
+.frioul{
+    margin-top:20px;
 }
