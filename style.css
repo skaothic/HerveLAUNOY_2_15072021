@@ -1,3 +1,4 @@
+/* généralité*/
 html{
     font-family: 'Raleway', sans-serif;
 }
@@ -6,6 +7,29 @@ background-color : #F2F2F2 ;
 }
 header,#main,#moreTitle{
     margin: 0px 50px;
+}
+li,nav{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.tittleToPad{
+    padding-left: 35px;
+}
+.moreEach:hover,.eachAside:hover,.each:hover,.submit:hover,#moreLink:hover{
+    transform:scale(1.05);
+}
+img{
+    object-fit:cover;
+}
+
+/* header*/
+
+h1{
+    font-size: 1.6rem;
+    font-weight: 1000;
 }
 nav {
     display:flex;   
@@ -19,13 +43,6 @@ nav {
     font-weight: bolder;
     color:#0065FC;
     font-size: x-large;
-}
-li,nav{
-    list-style:none;
-}
-a{
-    text-decoration: none;
-    color:black;
 }
 .choix {
     display: flex;
@@ -48,7 +65,7 @@ a{
     align-items: center;
 }
 #logo{
-    width: 100px;
+    width: 150px;
     object-fit: cover;
 }
 .navOption{
@@ -103,16 +120,40 @@ button , input {
     border: solid #0065FC;
     width: 134px;
 }
-.tittleToPad{
-    padding-left: 35px;
+button{
+    width: 52px;
 }
+.info{
+    color:black;
+    font-weight: bold;
+    font-size: larger;
+    font-size: 13px;
+}
+.logochoix{
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 80px;
+    color:#0065FC;
+}
+.fa-info{
+    border:solid #F2F2F2 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 30px;
+    text-align: center;
+    color:#0065FC;
+    font-size:0.8em;
+    padding: 4px;
+}
+
+/*section principale id=Main*/
+
 .mainPic{
     height: 115px;
     width: 236px;
     border-radius: 25px 25px 0 0 ;
     object-fit:cover;
-    border: 3px solid white;
-
+    border: 4px solid white;
 }
 #main{
     display: flex;
@@ -128,15 +169,6 @@ button , input {
 #content,aside{
     border-radius: 30px;
 }
-footer{
-    display: flex;
-    height:220px;
-    width:100%;
-    margin-top:30px;
-}
-.footerList{
-    padding:20px 260px 20px 50px;
-}
 .each{
     display: flex;
     flex-direction: column;
@@ -151,6 +183,9 @@ footer{
     display: flex;
     padding: 5px 0 10px 0px;
 }
+.AsideRating{
+    padding-top:35px;
+}
 .fa-star{
     color:blue;
     margin-left: 3px;
@@ -158,16 +193,12 @@ footer{
 .grey{
     color:#c9bebe
 }
-button{
-    width: 52px;
-}
 .asidePic{
     height: 134px;
     width: 127px;
     border-radius:  25px 0 0 25px ;
     object-fit: cover;
     border: 4px solid white;
-
 }
 .eachAside{
     display: flex;
@@ -179,17 +210,6 @@ button{
     width: 340px;
     align-items: center;
     box-shadow:10px 10px 10px #a8a0a0;
-}
-span{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.logochoix{
-    background-color: #DEEBFF;
-    padding: 15px;
-    border-radius: 80px;
-    color:#0065FC;
 }
 #content{
     width: 980px;
@@ -207,29 +227,22 @@ aside{
     justify-content: space-between;
     padding-right:45px;
 }
-.info{
-    color:black;
-    font-weight: bold;
-    font-size: larger;
-    font-size: 13px;
-}
 h4{
     font-weight:1000;
-    font-size:1.3rem;
+    font-size:1.2rem;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-bottom: 5px;
 }
-.fa-info{
-    border:solid #F2F2F2 2px;
-    height: 10px;
-    width: 10px;
-    border-radius: 30px;
-    text-align: center;
-    color:#0065FC;
-    font-size:0.8em;
-    padding: 4px;
+.hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:20px;
 }
+
+/*more*/
+
 #more{
     display: flex;
     flex-direction: row;
@@ -244,17 +257,8 @@ h4{
     justify-content: flex-start;
     align-self: flex-end;
 }
-.hotel{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left:20px;
-}
 #moreTitle{
     margin-bottom: 20px;
-}
-img{
-    object-fit:cover;
 }
 .moreBigPic{
     height: 390px;
@@ -289,24 +293,30 @@ img{
 }
 .moreTitle{
     margin: 15px;
-    font-weight:900 ;
-}
-h1{
-    font-size: 1.6rem;
-    font-weight: 1000;
-}
-.footerChoice{
-    margin-top: 15px;
-}
-.footerChoice:hover{
-    transform: scale(1.2);
-    margin-left: 15px;
-    margin-right:-15px;
-    font-weight: 500;
+    font-weight:900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .frioul,.longchamps{
     margin-top:20px;
 }
-.moreEach:hover,.eachAside:hover,.each:hover,.submit:hover{
-    transform: scale(1.05);
+
+/*footer*/
+
+.footerChoice{
+    margin-top: 15px;
+}
+.footerChoice:hover{
+    transform: scale(1.1);
+    font-weight: 500;
+}
+footer{
+    display: flex;
+    height:220px;
+    width:100%;
+    margin-top:30px;
+}
+.footerList{
+    padding:20px 260px 20px 50px;
 }
