@@ -1,9 +1,11 @@
 html{
     font-family: 'Raleway', sans-serif;
-    margin: 0px 50px;
 }
 #content,footer,aside{
 background-color : #F2F2F2 ;
+}
+header,#main,#moreTitle{
+    margin: 0px 50px;
 }
 nav {
     display:flex;   
@@ -33,7 +35,7 @@ a{
     border : 2px solid #F2F2F2 ;
     border-radius: 80px;
     margin:10px;
-    font-weight: 800;
+    font-weight: 400;
     padding-right:45px;
     color:black;   
 }
@@ -71,6 +73,8 @@ a{
 .choix:hover{
     background-color: #DEEBFF;
     color:#0065FC;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 .submit{
     background-color: #0065FC;
@@ -114,7 +118,7 @@ button , input {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
 }
 .result{
     display: flex;
@@ -126,8 +130,12 @@ button , input {
 }
 footer{
     display: flex;
-    justify-content: space-between;
     height:220px;
+    width:100%;
+    margin-top:30px;
+}
+.footerList{
+    padding:20px 260px 20px 50px;
 }
 .each{
     display: flex;
@@ -141,13 +149,14 @@ footer{
 }
 .rating{
     display: flex;
-    padding-bottom: 10px;
+    padding: 5px 0 10px 0px;
 }
 .fa-star{
     color:blue;
+    margin-left: 3px;
 }
 .grey{
-    color:#F2F2F2
+    color:#c9bebe
 }
 button{
     width: 52px;
@@ -157,7 +166,7 @@ button{
     width: 127px;
     border-radius:  25px 0 0 25px ;
     object-fit: cover;
-    border: 3px solid white;
+    border: 4px solid white;
 
 }
 .eachAside{
@@ -167,7 +176,7 @@ button{
     margin: 20px;
     background-color: white;
     border-radius: 30px;
-    width: 400px;
+    width: 340px;
     align-items: center;
     box-shadow:10px 10px 10px #a8a0a0;
 }
@@ -183,11 +192,11 @@ span{
     color:#0065FC;
 }
 #content{
-    width: 1040px;
+    width: 980px;
     margin-bottom: 50px;
 }
 aside{
-    width: 500px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -205,10 +214,11 @@ aside{
     font-size: 13px;
 }
 h4{
-    font-weight:900;
-    font-size:1.2em;
+    font-weight:1000;
+    font-size:1.3rem;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    margin-bottom: 5px;
 }
 .fa-info{
     border:solid #F2F2F2 2px;
@@ -226,6 +236,7 @@ h4{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin: 0 35px;
 }
 .moreSmall{
     display:flex;
@@ -236,9 +247,11 @@ h4{
 .hotel{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    margin-left:10px;
+    margin-left:20px;
+}
+#moreTitle{
+    margin-bottom: 20px;
 }
 img{
     object-fit:cover;
@@ -268,10 +281,6 @@ img{
     width: 302px;
     border-radius: 30px 30px 0 0 ;
 }
-footer{
-    margin:0 -50px;
-    margin-top:45px;
-}
 .moreEach{
     border:solid transparent 1px;
     border-radius: 30px;
@@ -295,6 +304,9 @@ h1{
     margin-right:-15px;
     font-weight: 500;
 }
-.frioul{
+.frioul,.longchamps{
     margin-top:20px;
+}
+.moreEach:hover,.eachAside:hover,.each:hover,.submit:hover{
+    transform: scale(1.05);
 }
