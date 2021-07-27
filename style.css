@@ -77,7 +77,9 @@ nav {
 .navOption:hover{
     border-top:solid 2px #0065FC;
     color:#0065fc;
-
+}
+#filterTitle{
+    margin-right: 40px;
 }
 #filter{
     display:flex;
