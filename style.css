@@ -1,11 +1,104 @@
+/*media querries téléphone*/
+@media (max-device-width: 480px) {
+html{
+    width: 100%;
+}
+.result, #aside, .eachAsideMob{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+a.mainLink{
+    width: 100%;
+}
+#login{
+    margin-right: 5px;
+    margin-top: 10px;
+    position: absolute;
+    top:0;
+    right:0;
+    padding-left: 100px;
+}
+.moreBigPic, .moreSmallPic{
+    height: 200px;
+    object-fit: cover;
+}
+.ancre{
+    width: 100%;
+    position:relative;
+    top: 60px;
+    right:100%;
+    text-decoration: underline #F2F2F2 5px;
+}
+.navOption:hover{
+    color:#0065FC;
+    text-decoration-color: #0065FC;
+    border-top: none;
+}
+img.mainPic{
+    width:99%;
+    object-fit:cover;
+    size: unset;
+    
+}
+#aside{
+    width: 100%;
+    border-radius: 0;
+}
+a.eachAside{
+    width: 90%;
+    height:145px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width:100%;
+    height:15%;
+    margin-top:30px;
+    background-color: #F2F2F2;
+}
+#content{
+    background-color:transparent;
+}
+#more{
+    display:flex;
+    flex-direction: column;
+}
+.
+#main{
+    width:100%;
+}
+.moreEachLink{
+    width: 100%;
+}
+.moreSmall{
+    width: 100%;
+}
+.moreEach{
+    height: 200px;
+    width: 100%;
+}
+.moreBigPic, .moreSmallPic{
+    width: 100%;
+    height: 100%;
+}
+.mainPic{
+    width: 100%;
+}
+
+
+
+
+}
 /* généralité*/
 html{
     font-family: 'Raleway', sans-serif;
 }
-#content,footer,aside{
+#content, footer, aside{
 background-color : #F2F2F2 ;
 }
-header,#main,#moreTitle{
+header, #main, #moreTitle{
     margin: 0px 50px;
 }
 li,nav{
@@ -23,6 +116,10 @@ a{
 }
 img{
     object-fit:cover;
+}
+body{
+    width: 100%;
+    height: 100%;
 }
 
 /* header*/
@@ -65,7 +162,7 @@ nav {
     align-items: center;
 }
 #logo{
-    width: 150px;
+    width: 100px;
     object-fit: cover;
 }
 .navOption{
@@ -230,7 +327,7 @@ aside{
     padding-right:45px;
 }
 h4{
-    font-weight:1000;
+    font-weight:900;
     font-size:1.2rem;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -315,7 +412,7 @@ h4{
 }
 footer{
     display: flex;
-    height:220px;
+    height:35%;
     width:100%;
     margin-top:30px;
 }
