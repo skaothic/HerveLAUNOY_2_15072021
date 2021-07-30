@@ -2,7 +2,37 @@
 @media (max-device-width: 480px) {
 *{
     font-size: 1.1em;
-    }
+}
+#soleil {
+    object-position: 0px -90px;
+}
+#bleu{
+    object-position: 0 -290px ;
+}
+#Cannebière{
+    object-position: 0 -300px;
+}
+#port{
+    object-position: 0 -280px;
+}
+#mouettes{
+    object-position: 0 -290px;
+}
+#mer{
+    object-position: 0 -400px;
+}
+#Panier{
+    object-position: 0 -290px;
+}
+#Amina{
+    object-position: 0 -630px;
+}
+#Calanques{
+    object-position: 0 -300px;
+}
+#dame{
+    object-position:0 -90px ;
+}
 h4{
     font-size: 1.15em !important;
 }
@@ -89,6 +119,7 @@ button, input{
     flex-flow: row wrap !important;
     align-items: flex-start !important;
     width: 100%;
+    padding-left: 0 !important;
 }
 #FamilialEco{
     display: flex;
@@ -159,7 +190,7 @@ li{
 #aside{
     width:100%;
     border-radius: 0;
-    padding: 15px;
+    padding: 15px !important;
 }
 a.eachAside{
     width: auto !important;
@@ -198,7 +229,7 @@ footer{
 }
 #content{
     background-color:transparent !important;
-    margin:0px 15px
+    margin:0px 15px !important;
 } 
 body{
     display: flex;
