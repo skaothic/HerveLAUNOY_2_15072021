@@ -83,7 +83,7 @@ button, input{
     padding-right: 15px  !important;
 }
 .choixList{
-    width:40%;
+    width:50%;
 }
 #filter{
     flex-flow: row wrap !important;
