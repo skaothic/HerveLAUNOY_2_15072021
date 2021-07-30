@@ -1,8 +1,11 @@
 /*media querries téléphone*/
 @media (max-device-width: 480px) {
 *{
-    font-size: 1em;
+    font-size: 1.1em;
     }
+h4{
+    font-size: 1.15em !important;
+}
 #titre{
     display: flex !important;
     flex-direction: column;
@@ -57,7 +60,8 @@ nav{
     right:25px !important;
 }
 .hotel{
-    justify-content: space-around !important;
+    justify-content: space-between !important;
+    width: 50% !important;
 }
 #locate{
     width:10% !important;
@@ -97,12 +101,15 @@ a.mainLink{
 }
 .each{
     align-items: stretch;
-    height: 250px !important;
+    height: 400px !important;
     box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 !important;
 }
 .moreBigPic,.moreSmallPic{
     height: 135px !important;
     width:100% !important;
+}
+#moreTitle{
+    font-size: 1.8em;
 }
 li{
     margin-right: 0 !important;
@@ -112,6 +119,9 @@ li{
     display: flex;
     flex-direction: row;
     justify-self: stretch;
+}
+.info{
+    font-size: 0.9em !important;
 }
 .ancre{
     width: 50%;
@@ -142,7 +152,7 @@ li{
 }
 a.eachAside{
     width: auto !important;
-    height: 160px !important;;
+    height: 200px !important;;
     margin-left:5% !important;
     justify-content: flex-start !important;
     align-items: stretch !important;
@@ -162,19 +172,19 @@ footer{
     margin-top:30px;
     background-color: #F2F2F2;
 }
+/*more*/
 #more{
-    flex-direction: column !important;
-    align-items: stretch !important;
-    justify-content: space-between !important;
+    display: block !important;
+}
+.moreEach{
+    width: 100% !important;
+    height: 250px !important;
+}
+.morePic{
+    height: 70% !important;
 }
 #content{
     background-color:transparent !important;
-
-}
-.moreEachLink,.moreEach,.moreSmall{
-    height: 180px;
-    width: 100%;
-    padding-bottom: 35px;
 } 
 body{
     display: flex;
