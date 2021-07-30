@@ -95,6 +95,16 @@ button, input{
     flex-direction: row;
     justify-content: space-between;
 }
+.fa-info{
+    border-width:2px !important;
+    height: max-content !important;
+    width: max-content !important;
+    padding:  10px 28px 10px 21px  !important;
+    border-radius: 50% !important;
+    font-size: 0.6em !important;
+    text-align: center;
+
+}
 a.mainLink{
     width: 100%;
     height:100%;
@@ -149,11 +159,12 @@ li{
 #aside{
     width:100%;
     border-radius: 0;
+    padding: 15px;
 }
 a.eachAside{
     width: auto !important;
     height: 200px !important;;
-    margin-left:5% !important;
+    margin-left:2% !important;
     justify-content: flex-start !important;
     align-items: stretch !important;
 }
@@ -175,16 +186,19 @@ footer{
 /*more*/
 #more{
     display: block !important;
+    margin:30px !important;
 }
 .moreEach{
     width: 100% !important;
     height: 250px !important;
+    margin:15px 0px !important;
 }
 .morePic{
     height: 70% !important;
 }
 #content{
     background-color:transparent !important;
+    margin:0px 15px
 } 
 body{
     display: flex;
@@ -197,6 +211,9 @@ body{
 .asidePic{
     height: 93%;
     width: 38%;
+}
+.footerChoice{
+    width: 100% !important;
 }
 }
 /* généralité*/
@@ -232,7 +249,7 @@ body{
 /* header*/
 
 h1{
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: 1000;
 }
 nav {
