@@ -15,41 +15,44 @@
     <div id="titre">
             <p id=logoBox><img src=images/logo/Reservia@3x.png id="logo" alt="logo"></p>
                 <nav>
-                    <a href=#content class="navOption ancre">Hébergements</a>
-                    <a href=#more class="navOption ancre">Activités</a>
                     <a href=# id="login" class="navOption">S'inscrire</a>
+                    <div id="ancres"><a href=#content class="navOption ancre">Hébergements</a>
+                    <a href=#more class="navOption ancre">Activités</a></div>
                 </nav>
     </div>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
-    <form method=get action="#">
+    <form method=get action="#" id="form">
         <button class="btn" id="locate">
             <i class="fas fa-map-marker-alt"></i>
         </button>
-        <input type="text" placeholder="Marseille, France"/>
-        <input type="submit" value="Rechercher" class="submit">
+        <input type="text" placeholder="Marseille, France" id=input/>
+        <input type="submit" value="Rechercher" id="submit"/>
+        <button type="submit" id="submitMob">
+            <i class="fas fa-search"></i>
+        </button>
     </form>
-    <ul id=filter>
-        <li><h3 id=filterTitle>Filtres</h3></li>
-        <li>
+    <ul id="filter">
+        <li id="filterTitle"><h3>Filtres</h3></li>
+        <li class="choixList">
             <a class="choix" href=#>
                 <i class="fas fa-money-bill-wave logochoix"></i>
                     <span class="filterChoice">Economique</span>
             </a>
         </li>
-        <li>
+        <li class="choixList">
             <a class="choix" href=#>
                 <i class="fas fa-child logochoix"></i>
                     <span class="filterChoice">Familial</span>
             </a>
         </li>
-        <li>
+        <li class="choixList">
             <a class="choix" href=#>
                 <i class="fas fa-heart logochoix"></i>
                     <span class="filterChoice">Romantiques</span>
             </a>
         </li>
-        <li>
+        <li class="choixList">
             <a class="choix" href=#>
                 <i class="fas fa-dog logochoix"></i>
                     <span class="filterChoice">Animaux autorisés</span>
@@ -129,7 +132,8 @@
                     </a>
                 </div>
                 <div class="each">
-                    <a href=# class=mainLink><img src=images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg class="mainPic" alt="Auberge Le Panier"> 
+                    <a href=# class=mainLink>
+                        <img src=images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg class="mainPic" alt="Auberge Le Panier"> 
                         <div class="hotel">
                             <h4>Auberge Le Panier</h4>
                             Nuits à partir de 23€
@@ -144,7 +148,8 @@
                         </a>
                     </div>
                     <div class="each">
-                        <a href=# class=mainLink><img src=images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg class="mainPic" alt="Auberge chez Amina"> 
+                        <a href=# class=mainLink>
+                            <img src=images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg class="mainPic" alt="Auberge chez Amina"> 
                             <div class="hotel">
                                 <h4>Auberge chez Amina</h4>
                                 Nuits à partir de 96€
@@ -163,7 +168,7 @@
      </section>
      <aside id=aside>
            <h2 id="asideTitle" class="tittleToPad">Les plus populaires <i class="fas fa-chart-line"></i></h2>
-             <div class=eachAsideMob>
+             <div>
                     <a href=# class="eachAside" >
                        <img src=images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg class="asidePic" alt="Hôtel Le soleil du matin"> 
                           <div class="hotel">
@@ -179,7 +184,7 @@
                           </div>
                  </a>
                </div>
-               <div class=eachAsideMob>
+               <div>
                     <a href=# class="eachAside">
                      <img src=images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg class="asidePic" alt="Au coeur de l'eau Chambres d'hôtes"> 
                          <div class="hotel">
@@ -195,7 +200,7 @@
                           </div>
                     </a>
                 </div>
-                <div class=eachAsideMob>
+                <div>
                     <a href=# class="eachAside">
                         <img src=images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg class="asidePic" alt="Hôtel tout bleu et Blanc"> 
                             <div class="hotel">
@@ -217,7 +222,7 @@
     <div id="more">
             <a href=# class="moreEachLink">
                 <div class="moreBig moreEach">
-                    <img src=images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg class="moreBigPic" alt="Vieux Port">
+                    <img src=images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg class="morePic moreBigPic" alt="Vieux Port">
                         <div class="moreTitle">Vieux Port
                         </div>
                 </div>
@@ -225,14 +230,14 @@
         <div class ="moreSmall">
             <a href=# class="moreEachLink">
                 <div class="moreEach">
-                    <img src=images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg class="moreSmallPic" id="fort" alt="Fort de Pomègue">
+                    <img src=images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg class="morePic moreSmallPic" id="fort" alt="Fort de Pomègue">
                         <div class="moreTitle">Fort de Pomègue
                         </div>
                 </div>
             </a>
             <a href=# class="moreEachLink frioul">
                 <div class="moreEach">
-                    <img src=images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg class="moreSmallPic" id="frioul" alt="Îles du Frioul">
+                    <img src=images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg class="morePic moreSmallPic" id="frioul" alt="Îles du Frioul">
                         <div class="moreTitle">Îles du Frioul
                         </div>
                 </div>
@@ -240,7 +245,7 @@
         </div>
             <a href=# class="moreEachLink">
                 <div class="moreBig moreEach">
-                    <img src=images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg class="moreBigPic" alt="Calanques">
+                    <img src=images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg class="morePic moreBigPic" alt="Calanques">
                         <div class="moreTitle">Parc National des Calanques
                         </div>
                 </div>
@@ -248,14 +253,14 @@
         <div class ="moreSmall">
             <a href=# class="moreEachLink">
                 <div class="moreEach">
-                    <img src=images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg class="moreSmallPic" id="dame" alt="Notre-Dame-de-la-Garde">
+                    <img src=images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg class="morePic moreSmallPic" id="dame" alt="Notre-Dame-de-la-Garde">
                         <div class="moreTitle">Notre-Dame-de-la-Garde
                         </div>
                 </div>
             </a>
             <a href=# class="moreEachLink longchamps">
                 <div class="moreEach">
-                    <img src=images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg class="moreSmallPic" id="longchamps" alt="Longchamps">
+                    <img src=images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg class="morePic moreSmallPic" id="longchamps" alt="Longchamps">
                         <div class="moreTitle">Longchamps
                         </div>
                 </div>
