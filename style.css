@@ -1,5 +1,6 @@
-/*media querries téléphone*/
+/****************************************************************media querries téléphone*******************************************************************************/
 @media (max-device-width: 480px) {
+/********************************************************generalité et cadrage photo***********************************************************************************/
 *{
     font-size: 1.1em;
 }
@@ -33,9 +34,16 @@
 #dame{
     object-position:0 -90px ;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 !important;
+}
 h4{
     font-size: 1.15em !important;
 }
+/*********************************************************************************header***********************************************************************************/
 #titre{
     display: flex !important;
     flex-direction: column;
@@ -62,18 +70,10 @@ nav{
     top:0;
     right:0;
 }
-.result{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 #form{
     width: 100% !important;
     justify-content: stretch !important;
     height:75px !important;
-}
-.AsideRating{
-    padding-top: 20px !important;
 }
 #submit{
     display:none;
@@ -88,10 +88,6 @@ nav{
     width:85px;
     position: relative;
     right:25px !important;
-}
-.hotel{
-    justify-content: space-between !important;
-    width: 50% !important;
 }
 #locate{
     width:10% !important;
@@ -134,23 +130,6 @@ button, input{
     border-radius: 50% !important;
     font-size: 0.6em !important;
     text-align: center;
-
-}
-a.mainLink{
-    width: 100%;
-    height:100%;
-}
-.each{
-    align-items: stretch;
-    height: 400px !important;
-    box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 !important;
-}
-.moreBigPic,.moreSmallPic{
-    height: 135px !important;
-    width:100% !important;
-}
-#moreTitle{
-    font-size: 1.8em;
 }
 li{
     margin-right: 0 !important;
@@ -178,6 +157,32 @@ li{
     border-top: none !important;
     border-bottom: solid #0065FC 5px;
 }
+/***********************************************************************section principale id=Main************************************************************************/
+a.mainLink{
+    width: 100%;
+    height:100%;
+}
+#main{
+    margin-left: 0 !important;
+}
+.result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hotel{
+    justify-content: space-between !important;
+    width: 50% !important;
+}
+#content{
+    background-color:transparent !important;
+    margin:0px 15px !important;
+}
+.each{
+    align-items: stretch;
+    height: 400px !important;
+    box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 !important;
+}
 .mainPic{
     width: 98% !important;
     height: 60% !important;
@@ -186,6 +191,9 @@ li{
     right:5px !important;
     left: 5px !important;
     top: 5px !important;
+}
+.AsideRating{
+    padding-top: 20px !important;
 }
 #aside{
     width:100%;
@@ -205,16 +213,7 @@ a.eachAside{
     left:1px !important;
     width:50% !important;
 }
-footer{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width:100%;
-    height:15%;
-    margin-top:30px;
-    background-color: #F2F2F2;
-}
-/*more*/
+/***********************************************************************************more**********************************************************************************/
 #more{
     display: block !important;
     margin:30px !important;
@@ -224,34 +223,55 @@ footer{
     height: 250px !important;
     margin:15px 0px !important;
 }
+#moreTitle{
+    font-size: 1.8em;
+}
 .morePic{
     height: 70% !important;
-}
-#content{
-    background-color:transparent !important;
-    margin:0px 15px !important;
+    width:100% !important;
 } 
-body{
+/*********************************************************************************footer***********************************************************************************/
+footer{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-}
-#main{
-    margin-left: 0 !important;
-}
-.asidePic{
-    height: 93%;
-    width: 38%;
+    align-content: center;
+    width:100%;
+    height:15%;
+    margin-top:30px;
+    background-color: #F2F2F2;
 }
 .footerChoice{
     width: 100% !important;
 }
 }
-/* généralité*/
-header, #moreTitle{
-    margin: 0px 50px;
+/*********************************************************************version tablette*************************************************************************************/
+@media (min-device-width: 480px) and (max-device-width: 1380px) {
+#main{
+flex-direction: column !important;
+align-items: center !important;
 }
-li,nav{
+#content{
+    width: 96% !important;
+    margin:40px 0 !important;
+}
+#aside{
+    width: 96% !important;
+    flex-direction: row !important;
+}
+#asideTitle {
+    padding-right: 15px !important;
+    flex-direction: column;
+}
+.footerList{
+    padding: 20px 200px 20px 50px !important;
+}
+
+
+}
+/**********************************************************************version desktop**************************************************************************************/
+/****************************************************************************** généralité**********************************************************************************/
+
+li{
     list-style:none;
 }
 a{
@@ -277,8 +297,10 @@ body{
     width: 100%;
 }
 
-/* header*/
-
+/*********************************************************************************header***********************************************************************************/
+header{
+    margin: 0px 50px;
+}
 h1{
     font-size: 1.6em;
     font-weight: 1000;
@@ -295,7 +317,7 @@ nav {
     color:#0065FC;
     font-size: x-large;
     order:1;
-    padding-top: 39px;
+    padding-top: 40px;
 }
 .choix {
     display: flex;
@@ -329,7 +351,7 @@ nav {
     font-size: large;
 }
 .navOption:hover{
-    border-top:solid 2px #0065FC;
+    border-top:solid 4px #0065FC;
     color:#0065fc;
 }
 #filterTitle{
@@ -388,9 +410,10 @@ button{
 }
 .logochoix{
     background-color: #DEEBFF;
-    padding: 15px;
+    padding: 25px;
     border-radius: 80px;
     color:#0065FC;
+    height: 100%;
 }
 .fa-info{
     border:solid #F2F2F2 2px;
@@ -403,11 +426,11 @@ button{
     padding: 4px;
 }
 
-/*section principale id=Main*/
+/***********************************************************************section principale id=Main************************************************************************/
 
 .mainPic{
     height: 115px;
-    width: 236px;
+    width: 97%;
     border-radius: 25px 25px 0 0 ;
     object-fit:cover;
     border: 4px solid white;
@@ -420,7 +443,7 @@ button{
 }
 .result{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 #content,aside{
@@ -435,10 +458,14 @@ button{
     border-radius: 30px;
     color:black;
     box-shadow:10px 10px 10px #a8a0a0;
+    width: 25%;
 }
 .rating{
     display: flex;
     padding: 5px 0 10px 0px;
+}
+.mainLink{
+    width:100% ;
 }
 .AsideRating{
     padding-top:35px;
@@ -456,7 +483,6 @@ button{
     border-radius:  25px 0 0 25px ;
     object-fit: cover;
     border: 4px solid white;
-    
 }
 .eachAside{
     display: flex;
@@ -470,7 +496,7 @@ button{
     box-shadow:10px 10px 10px #a8a0a0;
 }
 #content{
-    width: 980px;
+    width: 70%;
     margin-bottom: 50px;
     background-color : #F2F2F2 ;
 }
@@ -501,7 +527,7 @@ h4{
     margin-left:20px;
 }
 
-/*more*/
+/***********************************************************************************more**********************************************************************************/
 
 #more{
     display: flex;
@@ -516,7 +542,7 @@ h4{
     justify-content: space-between;
 }
 #moreTitle{
-    margin-bottom: 20px;
+    margin: 0px 50px 20px;
 }
 .moreBig{
     height: 95%;
@@ -557,7 +583,7 @@ h4{
     justify-content: center;
 }
 
-/*footer*/
+/*********************************************************************************footer***********************************************************************************/
 
 .footerChoice{
     margin-top: 15px;
