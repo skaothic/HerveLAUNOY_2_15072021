@@ -159,14 +159,17 @@ li{
 }
 /***********************************************************************section principale id=Main************************************************************************/
 a.mainLink{
+    width: 100% !important;
     height:100% !important;
 }
 #main{
     margin-left: 0 !important;
 }
 .result{
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    align-content: center !important;
+    align-content: stretch !important;
 }
 .hotel{
     justify-content: space-between !important;
@@ -178,9 +181,11 @@ a.mainLink{
     width:100% !important;
 }
 .each{
+    align-items: center !important;
     height: 400px !important;
     box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 !important;
     width: 100% !important;
+    margin-left: 0 !important;
 }
 .mainPic{
     width: 98% !important;
@@ -256,7 +261,7 @@ align-items: center !important;
 #aside{
     width: 96% !important;
     flex-direction: row !important;
-}
+}302
 #asideTitle {
     padding-right: 15px !important;
     flex-direction: column;
@@ -570,7 +575,6 @@ h4{
     border-radius: 30px;
     margin:10px;
     box-shadow:10px 10px 10px #a8a0a0;
-    width: 302px;
 }
 .moreTitle{
     margin: 15px;
