@@ -159,16 +159,14 @@ li{
 }
 /***********************************************************************section principale id=Main************************************************************************/
 a.mainLink{
-    width: 100%;
-    height:100%;
+    height:100% !important;
 }
 #main{
     margin-left: 0 !important;
 }
 .result{
-    width: 100%;
-    display: flex;
     flex-direction: column;
+    align-content: center !important;
 }
 .hotel{
     justify-content: space-between !important;
@@ -177,11 +175,12 @@ a.mainLink{
 #content{
     background-color:transparent !important;
     margin:0px 15px !important;
+    width:100% !important;
 }
 .each{
-    align-items: stretch;
     height: 400px !important;
     box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 !important;
+    width: 100% !important;
 }
 .mainPic{
     width: 98% !important;
@@ -265,8 +264,6 @@ align-items: center !important;
 .footerList{
     padding: 20px 200px 20px 50px !important;
 }
-
-
 }
 /**********************************************************************version desktop**************************************************************************************/
 /****************************************************************************** généralité**********************************************************************************/
