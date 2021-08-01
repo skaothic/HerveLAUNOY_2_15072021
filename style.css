@@ -207,7 +207,7 @@ a.mainLink{
 a.eachAside{
     width: auto !important;
     height: 200px !important;;
-    margin-left:2% !important;
+    margin: 2% !important;
     justify-content: flex-start !important;
     align-items: stretch !important;
 }
@@ -227,8 +227,11 @@ a.eachAside{
     height: 250px !important;
     margin:15px 0px !important;
 }
+.moreSmall{
+    width: 100% !important;
+}
 #moreTitle{
-    font-size: 1.8em;
+    font-size: 1.8em !important;
 }
 .morePic{
     height: 70% !important;
@@ -251,8 +254,8 @@ footer{
 /*********************************************************************version tablette*************************************************************************************/
 @media (min-device-width: 480px) and (max-device-width: 1380px) {
 #main{
-flex-direction: column !important;
-align-items: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
 }
 #content{
     width: 96% !important;
@@ -261,13 +264,23 @@ align-items: center !important;
 #aside{
     width: 96% !important;
     flex-direction: row !important;
-}302
+    background-color: transparent !important;
+    height: 25% !important;
+}
 #asideTitle {
     padding-right: 15px !important;
     flex-direction: column;
 }
+.eachAside{
+    height:auto !important;
+    box-shadow:10px 10px 10px #F2F2F2 , -10px -10px 10px #F2F2F2 !important;
+    margin:20px 10px !important;
+}
 .footerList{
     padding: 20px 200px 20px 50px !important;
+}
+a.eachAside>div.hotel{
+    margin:5px 5px !important;
 }
 }
 /**********************************************************************version desktop**************************************************************************************/
@@ -480,8 +493,8 @@ button{
     color:#c9bebe
 }
 .asidePic{
-    height: 134px;
-    width: 127px;
+    height: 95%;
+    width: 40%;
     border-radius:  25px 0 0 25px ;
     object-fit: cover;
     border: 4px solid white;
@@ -490,26 +503,28 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 20px;
+    margin: 0 20px;
     background-color: white;
     border-radius: 30px;
-    width: 340px;
+    width: 90%;
+    height: 25%;
     align-items: center;
     box-shadow:10px 10px 10px #a8a0a0;
 }
 #content{
-    width: 70%;
+    width: 65%;
     margin-bottom: 50px;
     background-color : #F2F2F2 ;
-}
+} 
 aside{
-    width: 400px;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: stretch;
     margin-bottom: 50px;
     background-color : #F2F2F2 ;
-}
+} 
 #asideTitle{
     display: flex;
     justify-content: space-between;
@@ -528,7 +543,9 @@ h4{
     align-items: flex-start;
     margin-left:20px;
 }
-
+a.eachAside>div.hotel{
+    margin:5px 5px !important;
+}
 /***********************************************************************************more**********************************************************************************/
 
 #more{
@@ -538,19 +555,23 @@ h4{
     align-items:stretch;
     margin: 0 35px;
 }
+.more{
+    width: 25%;
+}
 .moreSmall{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 25%;
 }
 #moreTitle{
     margin: 0px 50px 20px;
 }
 .moreBig{
-    height: 95%;
+    height: 94%;
 }
 .moreBigPic{
-    height: 90%;
+    height: 89%;
     width:100%;
     border-radius: 30px 30px 0 0 ;
 } 
@@ -577,13 +598,18 @@ h4{
     box-shadow:10px 10px 10px #a8a0a0;
 }
 .moreTitle{
-    margin: 15px;
+    margin: 15px 25px;
     font-weight:900;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+.moreEachLink{
+    display:block;
+}
+div.moreBig>div.moreTitle{
+    margin: 10px 25px;
+}
 /*********************************************************************************footer***********************************************************************************/
 
 .footerChoice{
@@ -602,7 +628,4 @@ footer{
 }
 .footerList{
     padding:20px 260px 20px 50px;
-}
-.moreEachLink{
-    display:block;
 }
