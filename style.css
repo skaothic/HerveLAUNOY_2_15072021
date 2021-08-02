@@ -72,7 +72,6 @@ nav{
 }
 #form{
     width: 100% !important;
-    justify-content: stretch !important;
     height:75px !important;
 }
 #submit{
@@ -254,18 +253,33 @@ footer{
 /*********************************************************************version tablette*************************************************************************************/
 @media (min-device-width: 480px) and (max-device-width: 1380px) {
 #main{
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     align-items: center !important;
+}
+#filter{
+    justify-content: center !important;
+}
+form{
+    width: 100% !important;
+    justify-content: center !important;
+    height: 60px !important;
 }
 #content{
     width: 96% !important;
     margin:40px 0 !important;
+    background-color: transparent !important;
+}
+.choixList{
+    margin-right: 50px !important;
 }
 #aside{
     width: 96% !important;
     flex-direction: row !important;
-    background-color: transparent !important;
     height: 25% !important;
+}
+.each{
+    box-shadow:10px 10px 10px #F2F2F2 , -10px -10px 10px #F2F2F2 !important;
+
 }
 #asideTitle {
     padding-right: 15px !important;
@@ -273,11 +287,18 @@ footer{
 }
 .eachAside{
     height:auto !important;
-    box-shadow:10px 10px 10px #F2F2F2 , -10px -10px 10px #F2F2F2 !important;
     margin:20px 10px !important;
 }
+footer{
+    justify-content: space-around !important;
+}
 .footerList{
-    padding: 20px 200px 20px 50px !important;
+    width: 25% !important;
+    padding: 20px 0 !important;
+}
+.moreTitle{
+    margin: 3px 25px 15px !important;
+    height: 10% !important;
 }
 a.eachAside>div.hotel{
     margin:5px 5px !important;
@@ -557,6 +578,7 @@ a.eachAside>div.hotel{
 }
 .more{
     width: 25%;
+    margin:0 5px;
 }
 .moreSmall{
     display:flex;
