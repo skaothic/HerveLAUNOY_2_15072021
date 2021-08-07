@@ -10,7 +10,9 @@ a{
 }
 .tittleToPad{
     padding-left: 35px;
+    font-size: 20px;
 }
+.moreTitle
 .moreEach:hover,.eachAside:hover,.each:hover{
     transform:scale(1.05);
 }
@@ -20,8 +22,9 @@ img{
 body{
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
+    max-width: 2100px;
 }
 #main{
     width: 100%;
@@ -29,11 +32,11 @@ body{
 
 /*********************************************************************************header***********************************************************************************/
 header{
-    margin: 0px 50px;
+    margin: 0px 90px;
 }
 h1{
-    font-size: 20px;
-    font-weight: 1000;
+    font-size: 24px;
+    font-weight: 700;
 }
 nav {
     display:flex; 
@@ -76,7 +79,7 @@ nav {
 }
 .navOption{
     color:black;
-    padding: 43px 15px;
+    padding: 38px 15px;
     margin-right: 30px;
     font-size: 15px;
 }
@@ -100,13 +103,17 @@ nav {
     color:#0065FC;
     font-size: 1.1em;
 }
+#input{
+    font-size: 15px;
+}
 #submit{
     background-color: #0065FC;
     color:white ;
     border-radius: 0 20px 20px 0;
     font-weight: bold;  
     border: solid #0065FC;
-    width: 134px;  
+    width: 134px;
+    font-size:15px;  
 }
 #submitMob{
     display: none;
@@ -160,7 +167,7 @@ button{
 
 .mainPic{
     height: 115px;
-    width: 94%;
+    width: 93%;
     border-radius: 25px 25px 0 0 ;
     object-fit:cover;
     border: 8px solid white;
@@ -349,39 +356,8 @@ footer{
 }
 /****************************************************************media querries téléphone*******************************************************************************/
 @media (max-device-width: 480px) {
-    /********************************************************generalité et cadrage photo***********************************************************************************/
+    /********************************************************generalité***********************************************************************************/
   
-    /*
-    #soleil {
-        object-position: 0px -90px;
-    }
-    #bleu{
-        object-position: 0 -290px ;
-    }
-    #Cannebière{
-        object-position: 0 -300px;
-    }
-    #port{
-        object-position: 0 -280px;
-    }
-    #mouettes{
-        object-position: 0 -290px;
-    }
-    #mer{
-        object-position: 0 -400px;
-    }
-    #Panier{
-        object-position: 0 -290px;
-    }
-    #Amina{
-        object-position: 0 -630px;
-    }
-    #Calanques{
-        object-position: 0 -300px;
-    }
-    #dame{
-        object-position:0 -90px ;
-    }*/
     body{
         display: block;
         flex-direction: column;
@@ -396,7 +372,7 @@ footer{
     }
     /*********************************************************************************header***********************************************************************************/
     header{
-        margin:0;
+        margin:50px auto;
     }
     #titre{
         display: flex;
@@ -405,7 +381,7 @@ footer{
         width: 100% ;
     }
     h1{
-        font-size: 35px;
+        font-size: 40px;
         margin-left:50px;
     }
     nav{
@@ -430,7 +406,7 @@ footer{
     }
     #form{
         width: 90% ;
-        height:75px ;
+        height:100px ;
         margin:40px auto;
     }
     #submit{
@@ -442,8 +418,9 @@ footer{
         color:white ;
         border-radius: 30px;
         border: solid #0065FC;
-        height:75px;
-        width:10%;
+        height:100px;
+        width:14%;
+        font-size: 35px;
     }
     .fa-search{
        font-size:35px;
@@ -453,9 +430,10 @@ footer{
         width:10% ;
         font-size: xx-large ;
     }
-    input{
+    #input{
         border-right: none ;
-        font-size:1.6em;
+        font-size:35px;
+        font-weight: 600;
     }
     button, input{
         width:100%;
@@ -467,10 +445,17 @@ footer{
         width: 100% ;
     }
     .choix{
-        padding-right: 15px  ;
+        padding-right: 15px;
+        height: 75px;
     }
     .choixList{
         width:50%;
+    }
+    .logochoix{
+        width: 35px;
+        font-size:30px;
+        padding:20px;
+        height: 35px;
     }
     #filter{
         flex-flow: row wrap ;
@@ -480,11 +465,14 @@ footer{
         margin:0 50px;
         font-size:1.4em;
     }
+    .filterChoice{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
     .fa-info{
-        height: 15px ;
-        width: 15px ;
+        height: auto ;
+        width: 50px ;
         border-radius: 50%;
-
     }
     #ancres{
         display: flex;
@@ -492,12 +480,12 @@ footer{
         justify-self: stretch;
     }
     .info{
-        font-size: 1.3em;
+        font-size: 20px;
         margin: 20px 50px;
     }
     .ancre{
         width: 50%;
-        padding-bottom: 5px ;
+        padding-bottom: 25px ;
         border-bottom: solid #F2F2F2 5px;
         margin:0 ;
         margin-bottom: 35px ;
@@ -508,6 +496,7 @@ footer{
         color:#0065FC;
         border-top: none ;
         border-bottom: solid #0065FC 5px;
+        font-weight: bold;
     }
     /***********************************************************************section principale id=Main************************************************************************/
     a.mainLink{
@@ -519,12 +508,10 @@ footer{
     }
     .result{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: stretch ;
+        display: block;
     }
     .hotel{
-        font-size:2em;
+        margin-left: 35px;
     }
     #content{
         background-color:transparent ;
@@ -533,15 +520,14 @@ footer{
         height: 60%;
     }
     .each{
-        align-items: center ;
-        height: 500px ;
+        height: 550px ;
         box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 ;
-        width: 100% ;
-        margin-left: 0 ;
+        width: 90%;
+        margin: 50px 5%;
     }
     .mainPic{
         width: 98% ;
-        height: 70% ;
+        height: 65% ;
         object-fit:cover ;
         position: relative ;
         right:5px ;
@@ -549,8 +535,8 @@ footer{
         top: 5px ;
     }
     .rating{
-        font-size: 20px;
-        padding-top: 15px;
+        font-size: 30px;
+        padding: 15px;
     }
     .AsideRating{
         padding-top: 100px ;
@@ -558,20 +544,27 @@ footer{
     #aside{
         width:100%;
         border-radius: 0;
-        padding: 15px;    }
+        padding: 15px;    
+    }
     a.eachAside{
-        width: 96% ;
-        height: 28%;
-        margin: 2%;
+        width: 95% ;
+        height: 25%;
     }
     .asidePic{
-        height: 95% ;
-        width:50% ;
+        height: 93% ;
+        width:50%;
+        border: white solid 12px;
     }
     a.eachAside>div.hotel{
         justify-content: center;
         padding-left: 10px;
         width: 40%;
+    }
+    .hotel>span{
+        font-size: 35px;
+    }
+    div.hotel>h4{
+        font-size: 40px;
     }
     /***********************************************************************************more**********************************************************************************/
     #more{
@@ -579,12 +572,12 @@ footer{
         margin:30px ;
     }
     .moreEach{
-        width: 100% ;
-        height: 350px ;
-        margin:15px 0px ;
+        width: 90% ;
+        height: 500px ;
+        margin:15px 5% ;
     }
     .tittleToPad,#moreTitle{
-        font-size: 3em;
+        font-size: 3.5em;
     }
     .moreSmall{
         width: 100% ;
@@ -592,11 +585,13 @@ footer{
     h3{
         font-size: 2em;
     }
-    .moreTitle{
-        font-size:1.8em;
+    .moreTitle,div.moreBig>div.moreTitle{
+        font-size:2.8em;
+        margin:45px 55px
+
     }
     .morePic,#garde,#frioul,#garde,#fort,#dame,#longchamps{
-        height: 80% ;
+        height: 70% ;
         width:100% ;
     } 
     /*********************************************************************************footer***********************************************************************************/
@@ -606,11 +601,31 @@ footer{
     }
     .footerChoice{
         width: 100% ;
-        font-size: 1.9em;
+        font-size: 2.5em;
+        padding: 15px 0;
+    }
+    .footerList{
+        padding:40px;
+    }
+    li>h3{
+        font-size: 3.2em;
     }
     }
     /*********************************************************************version tablette*************************************************************************************/
     @media (min-device-width: 480px) and (max-device-width: 1380px) {
+    header{
+        margin: 40px;
+    }
+    .navOption:hover{
+        border:solid #0065FC 2px;
+        border-radius: 10px;
+        padding:10px;
+        background-color: #DEEBFF;
+        font-weight: bold;
+    }
+    .info{
+        font-size: 18px;
+    }
     #main{
         flex-direction: column-reverse ;
         align-items: center ;
@@ -628,11 +643,15 @@ footer{
     }
     #content{
         width: 96% ;
-        margin:40px 0 ;
+        margin:40px 0;
         background-color: transparent ;
     }
+    .choix{
+        padding-right: 20px;
+    }
     .choixList{
-        margin-right: 50px ;
+        margin-right: 50px;
+        font-size:20px;
     }
     #content{
         height: 50%;
@@ -692,7 +711,7 @@ footer{
         margin:20px 0;
     }
     .hotel{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     h4{
         font-size: 1.2em;
@@ -702,10 +721,6 @@ footer{
     }
     #moreTitle,.tittleToPad{
         font-size: 2em;
-    }
-    input{
-        font-size:1em;
-
     }
     }
         
