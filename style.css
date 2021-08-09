@@ -716,6 +716,9 @@ footer{
     h4{
         font-size: 1.2em;
     }
+    a.eachAside h4{
+        font-size:1.12em;
+    }
     .morePic{
         height: 85%;
     }
