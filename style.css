@@ -32,7 +32,7 @@ body{
 
 /*********************************************************************************header***********************************************************************************/
 header{
-    margin: 0px 90px;
+    margin: 0px 50px;
 }
 h1{
     font-size: 24px;
@@ -246,7 +246,7 @@ aside{
     justify-content: space-around;
     align-items: stretch;
     margin-bottom: 50px;
-    background-color : #F2F2F2 ;
+    background-color : #F2F2F2;
 } 
 #asideTitle{
     display: flex;
@@ -355,23 +355,18 @@ footer{
 .footerList{
     padding:20px 60px;
 }
-/****************************************************************media querries téléphone*******************************************************************************/
-@media only screen and (max-width: 779px){    
-/********************************************************generalité***********************************************************************************/
-  
-    body{
+/*********************************************************************version telephone**************************************************************/
+@media only screen and (max-width: 800px){
+     /********************************************************generalité***********************************************************************************/
+     
+     body{
         display: block;
-        flex-direction: column;
-        align-items: stretch;
         margin: 0;
-    }
-    h4{
-        font-size: 1.05em;
     }
     .moreEach:hover,.eachAside:hover,.each:hover{
         transform:scale(1);
     }
-/*********************************************************************************header***********************************************************************************/
+    /*********************************************************************************header***********************************************************************************/
     header{
         margin:50px auto;
     }
@@ -382,32 +377,31 @@ footer{
         width: 100% ;
     }
     h1{
-        font-size: 40px;
-        margin-left:50px;
+        font-size: 2.1em;
+        margin:50px;
+        text-align: center;
     }
     nav{
         display: block ;
         width:100%;  
         padding:0 ;
-        font-size:1.5em; 
     }
     .ancres{
         width: 100%;
-        margin-right: -50px ;
+        font-size:1EM;
     }
     #logo{
-        transform: scale(1.6) ;
-        margin: 20px 60px ;
+        margin: 0px 60px ;
     }
     #login{
-        font-size: 1.5em ;
+        font-size: 1.5rem ;
         position:absolute;
-        top:0;
+        top:40px;
         right:0;
     }
     #form{
         width: 90% ;
-        height:100px ;
+        height:70px ;
         margin:40px auto;
     }
     #submit{
@@ -419,9 +413,11 @@ footer{
         color:white ;
         border-radius: 30px;
         border: solid #0065FC;
-        height:100px;
+        height:70px;
         width:14%;
-        font-size: 35px;
+        font-size: x-large;
+        position: relative;
+        right: 15px;
     }
     .fa-search{
        font-size:35px;
@@ -429,12 +425,12 @@ footer{
     }
     #locate{
         width:10% ;
-        font-size: xx-large ;
+        font-size: x-large ;
     }
     #input{
         border-right: none ;
-        font-size:35px;
-        font-weight: 600;
+        font-size:x-large;
+        font-weight: 500;
     }
     button, input{
         width:100%;
@@ -444,35 +440,42 @@ footer{
     }
     #filterTitle{
         width: 100% ;
+        font-size: .7em;
     }
     .choix{
-        padding-right: 15px;
-        height: 75px;
+        padding-right: 10px;
+        height: 50px;
     }
     .choixList{
         width:50%;
     }
     .logochoix{
-        width: 35px;
-        font-size:30px;
-        padding:20px;
-        height: 35px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        font-size:20px;
+        padding: 18px;
+        height: 15px;
+        text-align: center;
+        vertical-align: middle;
     }
     #filter{
         flex-flow: row wrap ;
         align-items: flex-start ;
         width: auto;
         padding-left: 0 ;
-        margin:0 50px;
-        font-size:.9em;
+        margin:0 10px;
+        font-size:.8em;
     }
     .filterChoice{
-        font-size: 1.5em;
-        font-weight: 600;
+        font-size: 1.35em;
+        font-weight: 500;
+        margin-left: 5px;
     }
     .fa-info{
         height: auto ;
-        width: 50px ;
+        width: 18px ;
         border-radius: 50%;
     }
     #ancres{
@@ -481,7 +484,7 @@ footer{
         justify-self: stretch;
     }
     .info{
-        font-size: 20px;
+        font-size: 1.2em;
         margin: 20px 50px;
     }
     .ancre{
@@ -491,7 +494,7 @@ footer{
         margin:0 ;
         margin-bottom: 35px ;
         text-align: center;
-        font-size: 1.5em ;
+        font-size: 1.4em ;
     }
     .navOption:hover{
         color:#0065FC;
@@ -499,69 +502,53 @@ footer{
         border-bottom: solid #0065FC 5px;
         font-weight: bold;
     }
+    #login:hover{
+        border: none;
+    }
     /***********************************************************************section principale id=Main************************************************************************/
-    a.mainLink{
-        width: 100% ;
-        height:100% ;
-    }
     #main{
-        height:60%;
-    }
-    .result{
-        width: 100%;
-        display: block;
-    }
-    .hotel{
-        margin-left: 35px;
+        flex-direction: column-reverse;
     }
     #content{
-        background-color:transparent ;
-        margin:0px 15px ;
-        width:100% ;
-        height: 60%;
+        background-color: white;
+        width: 100%;
+    }
+    .result{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .eachAside{
+        margin-bottom: 20px;
+        align-self: center;
+        height: 200px;
     }
     .each{
-        height: 550px ;
-        box-shadow: 10px 10px 10px #F2F2F2, -10px -10px 10px #F2F2F2 ;
         width: 90%;
-        margin: 50px 5%;
+        margin-bottom: 20px;
+        align-self: center;
+        height: 260px;
+    }
+    .mainLink{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     .mainPic{
-        width: 97% ;
-        height: 65% ;
-        object-fit:cover ;
+        width: 97%;
+        height: 170px;
     }
-    .rating{
-        font-size: 30px;
-        padding: 15px;
+    .result .hotel{
+        align-self: flex-start;
     }
-    .AsideRating{
-        padding-top: 100px ;
-    }
-    #aside{
-        width:100%;
+    aside{
+        width: 100%;
         border-radius: 0;
-        padding: 15px;    
     }
-    a.eachAside{
-        width: 95% ;
-        height: 25%;
-    }
-    .asidePic{
-        height: 93% ;
-        width:50%;
-        border: white solid 12px;
-    }
-    a.eachAside>div.hotel{
-        justify-content: center;
-        padding-left: 10px;
-        width: 40%;
-    }
-    .hotel>span{
-        font-size: 1.85em;
-    }
-    div.hotel>h4{
-        font-size: 2.15em;
+    #content h3.tittleToPad{
+        font-size: 1.5em;
+
     }
     /***********************************************************************************more**********************************************************************************/
     #more{
@@ -569,162 +556,186 @@ footer{
         margin:30px ;
     }
     .moreEach{
-        width: 90% ;
-        height: 500px ;
-        margin:15px 5% ;
+        height: 250px ;
+        margin:15px 2% ;
     }
-    .tittleToPad,#moreTitle{
-        font-size: 2.5em;
+    #moreTitle{
+        font-size: 1.7em;
     }
     .moreSmall{
         width: 100% ;
     }
+   
     h3{
         font-size: 2em;
     }
     .moreTitle,div.moreBig>div.moreTitle{
-        font-size:2.8em;
-        margin:45px 55px
+        font-size:1.3em;
+        margin:10px 55px
 
     }
     .morePic,#garde,#frioul,#garde,#fort,#dame,#longchamps{
-        height: 70% ;
+        height: 80% ;
         width:100% ;
-    } 
-    /*********************************************************************************footer***********************************************************************************/
-    footer{
+    }
+     /*********************************************************************************footer***********************************************************************************/
+     footer{
         flex-direction: column;
         align-content: center;
+        height: auto;
     }
     .footerChoice{
         width: 100% ;
-        font-size: 2.5em;
-        padding: 15px 0;
+        font-size: 1.1em;
+        padding: 10px 35px;
+        margin-top: 0;
     }
     .footerList{
-        padding:40px;
+        padding:0px 40px 15px;
     }
     li>h3{
-        font-size: 3.2em;
+        font-size: 1.5em;
+        padding-left:35px;
     }
+    footer ul:last-child{
+        padding-bottom: 150px;
     }
-    /*********************************************************************version tablette*************************************************************************************/
-    @media only screen and (min-width:780px) and (max-width:1024px){    
-    header{
-        margin: 40px;
-    }
-    .rating{
-        font-size: 12px;
-    }
-    .navOption:hover{
-        border:solid #0065FC 2px;
-        border-radius: 10px;
-        padding:10px;
-        background-color: #DEEBFF;
-        font-weight: bold;
-    }
-    #login:hover{
-        padding: 10px;
-    }
-    .info{
-        font-size: 18px;
-    }
-    #main{
-        flex-direction: column-reverse ;
-        align-items: center ;
-        height: 60%;
-    }
-    form{
-        justify-content: center ;
-        height: 60px ;
-    }
-    #filter{
-        justify-content: flex-end;
-    }
-    .choixList{
-        width: 35%;
-    }
-    #content{
-        width: 96% ;
-        margin:40px 0;
-        background-color: transparent ;
-    }
-    .choix{
-        padding-right: 20px;
-    }
-    .choixList{
-        margin-right: 50px;
-        font-size:20px;
-    }
-    #content{
-        height: 50%;
-    }
-    .each{
-        box-shadow:10px 10px 10px #F2F2F2 , -10px -10px 10px #F2F2F2 ;
-    }
-    #asideTitle {
-        flex-direction: column;
-        justify-content: space-between;
-        padding:0 20px;
-        width: 10%;
-        font-size: 24px;
-    }
-    footer{
-        justify-content: space-around ;
-        padding-bottom: 20px;
-    }
-    .footerList{
-        width: 25% ;
-        padding: 20px 0 ;
-    }
-    .moreTitle{
-        margin: 3px 25px 15px ;
-        height: auto ;
-    }
-    aside{
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        height:200px;
-        border-radius: 0;
-    }
-    a.eachAside{
-        height: 90%;
-        width: 28%;
-        margin:0 10px;
-    }
-    a.eachAside>div.hotel{
-        height: 100%;
-        padding:5px 10px 0 0;
-        margin:0;
-        justify-content: space-between;
-    }
-    .AsideRating{
-        padding-top: 5px;
-        justify-content: flex-end;
-    }
-    .asidePic{
-        height: 92%;
-        width: 45%;
-    }
-    .result{
-        justify-content: space-between;
-    }
-    .each{
-        width: 32%;
-        margin:20px 0;
-    }    
-    h4{
-        font-size: 1.2em;
-    }
-    a.eachAside h4{
-        font-size:1.12em;
-    }
-    .morePic{
-        height: 85%;
-    }
-    #moreTitle,.tittleToPad{
-        font-size: 2em;
-    }
-    }
-        
+}
+    
+    
+@media only screen and (min-width:801px) and (max-width:1024px){
+            header{
+                margin: 10px 30px;
+            }
+            .navOption ,#login{
+                font-size: 1.3em;
+            }
+            .navOption:hover ,#login:hover{
+                border:solid #0065FC 2px;
+                border-radius: 10px;
+                padding:10px;
+                background-color: #DEEBFF;
+                font-weight: bold;
+            }
+            #filter{
+                justify-content:flex-end;
+            }
+            .choixList{
+                width: 40%;
+            }
+            form{
+                justify-content: center ;
+                height: 60px ;
+            }
+            
+            #content{
+                width: 100% ;
+                margin:40px 0;
+                background-color: transparent ;
+            }
+            #main{
+                flex-direction: column-reverse ;
+                align-items: flex-start ;
+            }
+            aside{
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                border-radius: 0;
+                height: 200px;
+                margin-left:20px;
+            }
+            a.eachAside{
+                height: 190px;
+                width: 30%;
+                margin:5px;
+            }
+            .AsideRating{
+                letter-spacing: -3px;
+                padding-top: 20px;
+            }
+            a.eachAside>div.hotel{
+                justify-content: space-around;
+                align-items: center;
+                font-size:1em;
+                width: 35%;
+                height: 100%;
+            }
+            .mainLink{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;            
+            }
+            .hotel{
+                align-self: flex-start;
+            }
+            #asideTitle{
+                flex-direction: column;
+                padding:10px;
+                width: min-content;
+                align-items: center;
+                justify-content: space-between;
+                height: max-content
+            }
+            .asidePic{
+                height: 92%;
+                width: 50%;
+                border-right:0px;
+            } 
+            .result{
+                justify-content: space-around;
+                margin-bottom: 15px;
+            }
+            .each{
+                width:28%;
+                margin: 0;
+                padding:0;
+            }
+            .mainPic{
+                width:93%;
+            }
+            #content>h3{
+                font-size: 1.6em;
+            }
+            #content>h2{
+                font-size: 2em;
+            }
+            #more{
+                flex-wrap: wrap;
+                justify-content: start;
+            }
+            .moreSmall{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .moreBig{
+                height: fit-content;
+            }
+            .moreEach{
+                margin:5px;
+            }
+            .morePic, #dame,#fort,#frioul,#longchamps{
+                height: 200px;
+            }
+            #more>a.more{
+                width: 31%;
+            }
+            #more>div.more{
+                width: 66%;
+            }
+            .moreBig{
+                height: 266px;
+                margin: 5px;
+            }
+            .moreSmall>a{
+                width: 47%;
+            }
+            .moreTitle{
+                height: 30px;
+                padding: 0;
+            }
+            .footerList{
+                padding: 20px;
+            }
+          }     
