@@ -695,11 +695,18 @@ footer{
             .mainPic{
                 width:93%;
             }
+            #content h4{
+                font-size:1.2em;
+
+            }
+            #moreTitle{
+                font-size: 1.7em;
+            }
             #content>h3{
-                font-size: 1.6em;
+                font-size: 1.5em;
             }
             #content>h2{
-                font-size: 2em;
+                font-size: 1.5em;
             }
             #more{
                 flex-wrap: wrap;
@@ -734,6 +741,10 @@ footer{
             .moreTitle{
                 height: 30px;
                 padding: 0;
+            }
+            footer{
+                justify-content: space-around;
+                padding-bottom: 25px;
             }
             .footerList{
                 padding: 20px;
