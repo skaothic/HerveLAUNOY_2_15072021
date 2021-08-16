@@ -154,10 +154,9 @@ button{
 
 .mainPic{
     height: 115px;
-    width: 93%;
     border-radius: 25px 25px 0 0 ;
     object-fit:cover;
-    border: 8px solid white;
+    margin: 8px;
 }
 #main{
     display: flex;
@@ -189,9 +188,12 @@ button{
 }
 .mainLink{
     width:100% ;
+    display: flex;
+    flex-direction: column;
 }
 .AsideRating{
-    padding-top:35px;
+    padding-top:10px;
+    justify-self: end;
 }
 .fa-star{
     color:blue;
@@ -201,11 +203,10 @@ button{
     color:#c9bebe
 }
 .asidePic{
-    height: 88%;
     width: 40%;
     border-radius:  25px 0 0 25px ;
     object-fit: cover;
-    border: 7px solid white;
+    margin: 7px;
 }
 .eachAside{
     display: flex;
@@ -216,8 +217,12 @@ button{
     border-radius: 30px;
     width: 90%;
     height: 25%;
-    align-items: center;
+    align-items: stretch;
     box-shadow:10px 10px 10px #a8a0a0;
+}
+.eachAside h4{
+    padding-top: 5px;
+    font-size: 15px;
 }
 #content{
     width: 65%;
@@ -239,10 +244,13 @@ aside{
 }
 h4{
     font-weight:800;
-    font-size:18px;
+    font-size:16px;
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-bottom: 5px;
+}
+span{
+    font-size: 15px;
 }
 .hotel{
     display: flex;
@@ -251,7 +259,9 @@ h4{
     margin-left:20px;
 }
 a.eachAside>div.hotel{
-    margin:5px 6px ;
+    margin:5px 6px;
+    justify-content: space-around;
+    margin-left: 0;
 }
 /***********************************************************************************more**********************************************************************************/
 
@@ -393,13 +403,14 @@ footer{
         border-radius: 30px;
         border: solid #0065FC;
         height:70px;
-        width:14%;
+        width:70px;
         font-size: x-large;
         position: relative;
         right: 15px;
+        text-align: center;
     }
     .fa-search{
-       font-size:35px;
+       font-size:1em;
        margin-right: 5px;
     }
     #locate{
@@ -508,14 +519,7 @@ footer{
         align-self: center;
         height: 260px;
     }
-    .mainLink{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
     .mainPic{
-        width: 97%;
         height: 170px;
     }
     .result .hotel{
@@ -640,12 +644,6 @@ footer{
                 width: 35%;
                 height: 100%;
             }
-            .mainLink{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;            
-            }
             .hotel{
                 align-self: flex-start;
             }
@@ -670,9 +668,6 @@ footer{
                 width:28%;
                 margin: 0;
                 padding:0;
-            }
-            .mainPic{
-                width:93%;
             }
             #content h4{
                 font-size:1.1em;
